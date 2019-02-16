@@ -1,0 +1,36 @@
+.textarea{
+    width:50rem;
+    resize: none;
+    font-family: $font-secondary;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+   
+
+    .contact_social {
+        margin: 2rem;
+        height: 5rem;
+        align-self: center;
+
+        &-items {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            
+
+            &--a {
+                margin:2rem;
+                cursor: pointer;
+                transition: all.3s;
+
+                &:hover {
+                    transform: scale(1.2) translateX(-2px) translateY(-2px);
+                }
+
+                &---icon {
+                    color: $color-secondary;
+                }
+            }
+        }
+    }

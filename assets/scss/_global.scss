@@ -1,0 +1,45 @@
+// RESET
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 55%;
+    }
+}
+
+body {
+    font-family: $font-secondary;
+    color: $color-secondary;
+    line-height: 1.5;
+    font-weight: 300;
+    background-color: $color-white;
+}
+
+::selection {
+    color: $color-white;
+    background: $color-secondary;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: $color-white;
+}
+
+img {
+    display: block;
+}
+
+hr {
+    background-color: $color-secondary;
+}

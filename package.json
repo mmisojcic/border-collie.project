@@ -1,0 +1,27 @@
+{
+  "name": "border-collie-project",
+  "version": "1.0.0",
+  "description": "web site about border collie dog breed",
+  "main": "main.js",
+  "keywords": [
+    "border",
+    "collie",
+    "smartest",
+    "breed",
+    "dog"
+  ],
+  "author": "Marko Misojcic",
+  "license": "ISC",
+  "scripts": {
+    "watch:scss": "node-sass assets/scss/main.scss style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:scss"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "concat": "^1.0.3",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^4.1.1"
+  }
+}

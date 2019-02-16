@@ -1,0 +1,161 @@
+.header {
+	height: 100%;
+	padding: $padding-primary;
+
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+
+	&_nav {
+		grid-column: 4 / span 4;
+		grid-row: 1 / span 1;
+		align-self: flex-start;
+		justify-self: center;
+
+		height: fit-content;
+
+		display: flex;
+		justify-content: center;
+
+		&-items {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+
+			display: flex;
+
+			&--a::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 3px;
+				background-color: $color-primary;
+				// box-shadow: 0 0 5px $shadow-color-primary;
+				border-radius: 3px;
+				transform: scaleY(0);
+				transition: transform 0.2s,
+					width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+					background-color 0.1s;
+			}
+
+			&--a:hover::before {
+				transform: scaleY(1);
+				width: 100%;
+			}
+
+			&--a {
+				display: flex;
+				align-items: center;
+
+				margin-right: 3px;
+				position: relative;
+				font-size: 3rem;
+				font-weight: 500;
+				text-transform: uppercase;
+				white-space: nowrap;
+				backface-visibility: hidden;
+
+				a {
+					z-index: 1;
+					position: relative;
+					display: inline-block;
+					padding: 0.5rem 2.5rem;
+					transition: all 0.4s;
+
+					&:hover {
+						text-shadow: $text-shadow-small;
+					}
+				}
+			}
+		}
+	}
+
+	&_logo {
+		width: 30rem;
+
+		grid-column: 5 / 7;
+		grid-row: 3 / span 3;
+
+		justify-self: center;
+		align-self: center;
+
+		&-img {
+			width: 100%;
+		}
+	}
+
+	&_intro {
+		grid-column: 1 / - 1;
+		grid-row: 7 / 10;
+		justify-self: center;
+		align-self: flex-start;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&-letter {
+			opacity: 0;
+		}
+
+		&-1 {
+			color: $color-white;
+			text-shadow: $text-shadow-medium;
+			font-size: 6.5rem;
+			letter-spacing: 0.3rem;
+			text-align: center;
+			opacity: 0;
+
+			span {
+				color: $color-primary;
+			}
+		}
+
+		&-2 {
+			color: $color-white;
+			text-shadow: $text-shadow-small;
+			font-size: 2.5rem;
+			font-weight: 300;
+			text-transform: uppercase;
+			text-align: justify;
+			letter-spacing: 1.8rem;
+			padding-left: 1.8rem;
+
+			align-self: center;
+
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&_social {
+		grid-column: 6 / 10;
+		grid-row: 10 / span 1;
+		align-self: flex-end;
+		justify-self: flex-end;
+
+		height: 3rem;
+
+		&-items {
+			display: flex;
+			list-style: none;
+
+			&--a {
+				margin-left: 2rem;
+				cursor: pointer;
+				transition: all.3s;
+
+
+				&:hover {
+					transform: scale(1.2) translateX(-4px) translateY(-4px);
+				}
+
+				&---icon {
+					fill: $color-white;
+				}
+			}
+		}
+	}
+}

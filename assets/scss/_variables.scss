@@ -1,0 +1,23 @@
+// COLORS
+$color-primary:#fec322;
+$color-secondary:#19212b;
+$color-white:#eee;
+
+$shadow-color-primary:rgba(0, 0, 0, .6);
+
+// SHADOWS
+$text-shadow-very-small: 0 0 .1rem $shadow-color-primary;
+$text-shadow-small: .2rem 0 .2rem $shadow-color-primary;
+$text-shadow-medium: .2rem 0 .3rem $shadow-color-primary;
+$text-shadow-big: .5rem .1rem .5rem $shadow-color-primary;
+
+// FONTS
+$font-secondary: 'Alegreya Sans',
+sans-serif;
+
+// RANDOM
+$padding-primary:8rem;
+$padding-secondary:1rem;
+$padding-tertiary:2rem;
+
+$logo-width:6rem;

@@ -1,0 +1,97 @@
+// IMPORTS
+@import './variables';
+@import './_components';
+@import './_global';
+@import './_home';
+@import './_the-breed';
+@import './_order';
+@import './_contact';
+@import './_about';
+
+.main-wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    overflow: hidden;
+
+    &_content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba($color-secondary, 1), rgba($color-secondary, .3), rgba($color-secondary, .6));
+}
+
+.main {
+    width: 100%;
+    padding: $padding-primary;
+    padding-top: calc(#{$logo-width} + 2 * #{$padding-secondary} + #{$padding-primary});
+}
+
+.active {
+    background-color: $color-primary;
+    border-radius: 2px;
+    width: 100%;
+
+    a {
+        text-shadow: $text-shadow-small;
+    }
+}
+
+.padding-top-zero {
+    padding-top: 0;
+}
+
+.padding-zero {
+    padding: 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.icon {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.input-focus {
+    border: 1px solid rgba($color-primary, .7);
+    box-shadow: 0 0 4px rgba($color-primary, .9);
+}
+
+.input-blur {
+    border: 1px solid rgba($color-secondary, .7);
+    box-shadow: 0 0 4px rgba($color-secondary, .9);
+}
+
+.input-ok {
+    border: 1px solid rgba(#3baf3b, .7);
+    box-shadow: 0 0 4px rgba(#3baf3b, .9);
+    background-color: rgba(#3baf3b, .3) !important;
+}
+
+.input-error {
+    border: 1px solid rgba(red, .7);
+    box-shadow: 0 0 4px rgba(red, .9);
+    background-color: rgba(red, .3) !important;
+}

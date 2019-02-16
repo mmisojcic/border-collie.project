@@ -1,0 +1,113 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 8rem;
+    
+    &_info {
+        
+
+        &-text {
+            width:60%;
+            margin: 0 auto;
+            font-size: 2rem;
+            text-align: justify;
+            text-indent: 5rem;
+        }
+    }
+
+    &_form {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        width: fit-content;
+        margin: 3rem auto;
+
+        &-check {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            &--color {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 3px;
+                box-shadow: 0 0 3px $shadow-color-primary;
+                margin-right: 1rem;
+
+                &---blue {
+                    background-color: #43436b;
+                }
+
+                &---black {
+                    background-color: black;
+                }
+
+                &---brindle {
+                    background-color: rgb(92, 51, 53);
+                }
+
+                &---lilac {
+                    background-color: rgb(151, 108, 155);
+                }
+            }
+        }
+
+        &-error {
+            color: rgb(146, 12, 12);
+            font-size: 1.7rem;
+            text-shadow: 0 0 2px red, 0 0 2px red;
+            transition: all .4s;
+            // opacity: 0;
+        }
+
+        &-label {
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+        }
+
+        &-input {
+            outline: none;
+            padding: 0.5rem;
+            font-size: 1.8rem;
+            border-radius: 3px;
+            border: 1px solid rgba($color-secondary, .7);
+            box-shadow: 0 0 4px rgba($color-secondary, .9);
+            transition: all .4s;
+        }
+
+        &-checkbox {
+            margin-left: 1rem;
+            margin-right: 3rem;
+            border: none;
+        }
+
+        &-select {
+            outline: none;
+            padding: 0.5rem;
+            font-size: 1.7rem;
+            border-radius: 3px;
+            border: 1px solid rgba($color-secondary, 1);
+            box-shadow: 0 0 3px rgba($color-secondary, 1);
+            background-color: rgba($color-secondary, .3);
+        }
+
+        &-button {
+            width: fit-content;
+            letter-spacing: 0.2rem;
+            color: $color-white;
+            outline: none;
+            border: none;
+            align-self: center;
+            margin-top: 4rem;
+        }
+
+        &-total {
+            font-size: 4rem;
+            font-weight: 300;
+            margin-left: 1rem;
+        }
+    }
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,400,400i,500,700,700i,800|Exo:100,100i,200,300,400,400i,500,600,700,700i,800"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link href="../style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/js/order.js"></script>
+    <script src="../main.js"></script>
+    <title>Border Collie-The smartest dog breed</title>
+</head>
+
+<body>
+    <div class="main_wrapper">
+        <header class="head">
+            <div class="head_logo">
+                <div class="head_logo-imgbox">
+                    <img class="head_logo-imgbox--img" src="../assets/images/logo.png" alt="Logo image">
+                </div>
+                <div class="head_logo-intro">
+                    <h1 class="head_logo-intro--1">Border Collie</h1>
+                    <h2 class="head_logo-intro--2">The smartest dog breed</h2>
+                </div>
+            </div>
+            <nav class="head_nav">
+                <ul class="head_nav-items">
+                    <li class="head_nav-items--a"><a href="../index.html">Home</a></li>
+                    <li class="head_nav-items--a"><a href="the-breed.html">The breed</a></li>
+                    <li class="head_nav-items--a active"><a href="order.html">Order a puppy</a></li>
+                    <li class="head_nav-items--a"><a href="contact.html">Contact</a></li>
+                    <li class="head_nav-items--a"><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <h2 class="heading2">Get your Border Collie</h2>
+
+            <section class="order">
+                <article class="order_info">
+                    <h3 class="heading3 padding-top-zero center-text">
+                        Order a puppy from a well known breeders
+                    </h3>
+                    <p class="order_info-text">
+                        In colaboration with popular breeders, we provide You this service. Here You can safely order
+                        you Border Collie without any risk of beeing scamed.
+                        Our currier are working on dilivering your new pet safe and sound to the desired location and
+                        on time. Dilivery quality guaranteed.
+                    </p>
+                </article>
+
+
+
+                <form action="" method="" class="order_form">
+                    <h4 class="heading4 center-text">Submit your info to order</h4>
+                    <label class="order_form-label" for="">First name</label>
+                    <input class="order_form-input" type="text" id="firstName" name="firstName" placeholder="'Nenad'">
+                    <span class="order_form-error" id="errorFirstName">&nbsp;</span>
+
+                    <label class="order_form-label" for="">Last name</label>
+                    <input class="order_form-input" type="text" id="lastName" name="lastName" placeholder="'Jovanovic'">
+                    <span class="order_form-error" id="errorLastName">&nbsp;</span>
+
+                    <label class="order_form-label" for="">Email</label>
+                    <input class="order_form-input" type="text" id="email" name="email" placeholder="'example@mail.com'">
+                    <span class="order_form-error" id="errorEmail">&nbsp;</span>
+
+                    <label class="order_form-label" for="">Phone number</label>
+                    <input class="order_form-input" type="text" id="phone" name="phone" placeholder="'065 22 33 444'">
+                    <span class="order_form-error" id="errorPhone">&nbsp;</span>
+
+                    <label class="order_form-label" for="">Address</label>
+                    <input class="order_form-input" type="text" id="address" name="address" placeholder="'Bulevar Milutina Milankovica 17b'">
+                    <span class="order_form-error" id="errorAddress">&nbsp;</span>
+
+                    <label class="order_form-label" for="">City</label>
+                    <input class="order_form-input" type="text" id="city" name="city" placeholder="'Belgrade'">
+                    <span class="order_form-error" id="errorCity">&nbsp;</span>
+
+                    <label class="order_form-label" for="">ZIP</label>
+                    <input class="order_form-input" type="text" id="zip" name="zip" placeholder="'11000'">
+                    <span class="order_form-error" id="errorZip">&nbsp;</span>
+
+                    <label class="order_form-label" for="">Coat type:</label>
+                    <div class="order_form-check">
+                        <label class="order_form-label" for="roughCoat">Rough</label>
+                        <input class="order_form-checkbox" type="radio" name="coat" id="roughCoat">
+                        <label class="order_form-label" for="smoothCoat">Smooth</label>
+                        <input class="order_form-checkbox" type="radio" name="coat" id="smoothCoat">
+                    </div>
+                    <span class="order_form-error" id="errorCoatType">&nbsp;</span>
+
+                    <label class="order_form-label" for="">Coat color:</label>
+                    <div class="order_form-check">
+
+                        <label class="order_form-label" for="blueColor">
+                            <div class="order_form-check--color order_form-check--color---blue"></div>Blue
+                        </label>
+                        <input class="order_form-checkbox" type="radio" name="color" id="blueColor">
+
+
+                        <label class="order_form-label" for="blackColor">
+                            <div class="order_form-check--color order_form-check--color---black"></div>Black
+                        </label>
+                        <input class="order_form-checkbox" type="radio" name="color" id="blackColor">
+
+
+                        <label class="order_form-label" for="brindleColor">
+                            <div class="order_form-check--color order_form-check--color---brindle"></div>Brindle
+                        </label>
+                        <input class="order_form-checkbox" type="radio" name="color" id="brindleColor">
+
+
+                        <label class="order_form-label" for="lilacColor">
+                            <div class="order_form-check--color order_form-check--color---lilac"></div>Lilac
+                        </label>
+                        <input class="order_form-checkbox" type="radio" name="color" id="lilacColor">
+                    </div>
+                    <span class="order_form-error" id="errorCoatColor">&nbsp;</span>
+
+                    <label class="order_form-label" for="">Gender:</label>
+                    <div class="order_form-check">
+                        <label class="order_form-label" for="male">Male</label>
+                        <input class="order_form-checkbox" type="radio" name="gender" id="male">
+                        <label class="order_form-label" for="female">Female</label>
+                        <input class="order_form-checkbox" type="radio" name="gender" id="female">
+                    </div>
+                    <span class="order_form-error" id="errorGender">&nbsp;</span>
+
+                    <label class="order_form-label">Breeder:</label>
+                    <select class="order_form-select" type="select" name="breeder" id="breeder">
+                        <option value="default">Select a breeder</option>
+                        <option value="boywod">Boywod Border Collies</option>
+                        <option value="astra">Astra Border Collies</option>
+                        <option value="zigs">Zig's Border Collies</option>
+                        <option value="nethhill">Nethhill Border Collies</option>
+                        <option value="stirling">Stirling Collies</option>
+                        <option value="catsash">Catsash Boarding Kennels</option>
+                    </select>
+                    <span class="order_form-error" id="errorBreeder">&nbsp;</span>
+
+                    <label class="order_form-label" id="quantity">Quantity?&nbsp;</label>
+                    <input class="order_form-input" type="text" name="quantity" id="quantity" placeholder="'1 or more'">
+                    <span class="order_form-error" id="errorQuantity">&nbsp;</span>
+
+                    <label class="order_form-label">Total:&nbsp;<span class="order_form-total" id="total">&nbsp;</span></label>
+
+                    <input class="order_form-button btn" type="submit" name="submit" id="submit" value="Submit">
+                </form>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer_copy">
+                <span class="footer_copy-text">&copy; Copyright and design Marko Misojčić</span>
+            </div>
+            <div class="footer_social">
+                <ul class="footer_social-items">
+                    <li class="footer_social-items--a">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="header_social-items--a---icon fab fa-facebook-square fa-2x icon"></i>
+                        </a>
+                    </li>
+                    <li class="footer_social-items--a">
+                        <a href="https://www.instagram.com" target="_blank">
+                            <i class="header_social-items--a---icon fab fa-twitter fa-2x icon"></i>
+                        </a>
+                    </li>
+                    <li class="footer_social-items--a">
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="header_social-items--a---icon fab fa-instagram fa-2x icon"></i>
+                        </a>
+                    </li>
+                    <li class="footer_social-items--a">
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="header_social-items--a---icon fab fa-youtube fa-2x icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
